@@ -1,21 +1,22 @@
-// import { Job } from "@/types/job"
-// import { formatPostedDate } from "@/utils/format-date"
-import { Card, CardContent } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { formatPostedDate } from "@/lib/format-date"
-import { Job } from "@/lib/job"
+import { Card, CardContent } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Job } from "@/lib/job";
 
 interface JobCardProps {
-  job: Job
-  isSelected: boolean
-  onClick: () => void
+  job: Job;
+  isSelected: boolean;
+  onClick: () => void;
 }
 
-export default function JobCard({ job, isSelected, onClick }: JobCardProps) {
+export default function JobCard({
+  job,
+  isSelected,
+  onClick,
+}: Readonly<JobCardProps>) {
   return (
-    <Card 
+    <Card
       className={`cursor-pointer transition-colors ${
-        isSelected ? 'border-primary' : ''
+        isSelected ? "border-primary" : ""
       }`}
       onClick={onClick}
     >
@@ -39,12 +40,11 @@ export default function JobCard({ job, isSelected, onClick }: JobCardProps) {
               Quick Apply
             </Button>
             <span className="text-xs text-muted-foreground">
-              {formatPostedDate(job.postedDateTime)}
+              {new Date(job.postedDateTime).toLocaleDateString()}
             </span>
           </div>
         </div>
       </CardContent>
     </Card>
-  )
+  );
 }
-
