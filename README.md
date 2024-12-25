@@ -1,36 +1,25 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mployee - Job Listing App
 
-## Getting Started
+Welcome to **Mployee**, a modern job listing application built using **Next.js**. This app allows users to search and filter job listings based on location and other parameters, providing an intuitive experience with pagination and dynamic data fetching.
 
-First, run the development server:
+---
+![image](https://github.com/user-attachments/assets/c4627e63-8d71-447c-b29d-bc306ed952ab)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Dynamic Job Search**: Search jobs by location and filter through pagination.
+- **Backend Integration**: Fetch job data from a MongoDB database using a custom API route.
+- **Frontend Built with Next.js**: Utilizes React and Next.js for server-side rendering and API routes.
+- **Client-Side Fetching**: Data is fetched dynamically from the server based on user interaction.
+- **Responsive Design**: Mobile-friendly layout built with Tailwind CSS.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tech Stack
 
-## Learn More
+- **Frontend**: Next.js, React, Tailwind CSS
+- **Backend**: Node.js, Express (via Next.js API Routes)
+- **Database**: MongoDB
+- **Deployment**: Vercel (Frontend & backend)
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
